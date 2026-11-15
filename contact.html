@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Hanson Enobun</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="contact">
+  <header class="site-header"><a class="brand" href="index.html">Hanson Enobun</a><button class="menu-btn"
+      aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html" data-p="index">Home</a></li>
+        <li><a href="about.html" data-p="about">About</a></li>
+        <li><a href="projects.html" data-p="projects">Projects</a></li>
+        <li><a href="planner.html" data-p="planner">Planner</a></li>
+        <li><a href="contact.html" data-p="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="page-title">
+      <h1>Contact me</h1>
+      <p>Send a message and I'll reply as soon as I can.</p>
+    </section>
+    
+<section class="contact-layout">
+
+    <!-- CONTACT INFORMATION -->
+    <aside class="contact-info">
+        <h2>Get in touch</h2>
+
+        <p>
+            Have a project in mind, a creative opportunity,
+            or an idea you'd like to bring to life?
+            I'd be glad to hear from you.
+        </p>
+
+        <div class="contact-detail">
+            <span class="contact-detail-label">Email</span>
+
+            <a href="mailto:han.enobun@gmail.com">
+                han.enobun@gmail.com
+            </a>
+        </div>
+<div class="contact-detail social-links">
+
+    <span class="contact-detail-label">Find me on social media</span>
+
+    <a href="https://www.instagram.com/adbelon/"
+       target="_blank"
+       rel="noopener noreferrer">
+        Instagram
+    </a>
+
+    <a href="https://www.tiktok.com/@adbelon_"
+       target="_blank"
+       rel="noopener noreferrer">
+        TikTok
+    </a>
+
+</div>
+
+    </aside>
+
+    <!-- EXISTING CONTACT FORM -->
+    <section class="card narrow contact-form-card">
+
+      <form id="contact-form"
+      action="https://formspree.io/f/xaeoqrap"
+      method="POST"
+      novalidate>
+        <label for="name">Name</label>
+<input id="name" name="name" type="text">
+<span class="error" id="name-error"></span>
+        <label for="email">Email address</label>
+<input id="email" name="email" type="email">
+<span class="error" id="email-error"></span>
+        <label for="phone">Phone number</label>
+<input id="phone" name="phone" type="tel">
+<span class="error" id="phone-error"></span>
+        <label for="message">Message</label>
+<textarea id="message" name="message" rows="5"></textarea>
+<span class="error" id="message-error"></span>
+        <button class="btn" type="submit">Send message</button>
+        <p id="form-success" class="success" role="status"></p>
+      </form>
+    </section>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2026 Hanson Enobun. Computer Science, MIVA Open University.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Planner | Hanson Enobun</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body data-page="planner">
+  <header class="site-header"><a class="brand" href="index.html">Hanson Enobun</a><button class="menu-btn"
+      aria-label="Toggle menu" aria-expanded="false">Menu</button>
+    <nav id="nav">
+      <ul>
+        <li><a href="index.html" data-p="index">Home</a></li>
+        <li><a href="about.html" data-p="about">About</a></li>
+        <li><a href="projects.html" data-p="projects">Projects</a></li>
+        <li><a href="planner.html" data-p="planner">Planner</a></li>
+        <li><a href="contact.html" data-p="contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="page-title">
+      <h1>Academic planner</h1>
+      <p>Add a task, tick it off when it's done, and delete it when you no longer need it.</p>
+    </section>
+    <section class="card planner">
+      <form id="task-form"><label for="task-input">New task</label>
+        <div class="row"><input id="task-input" type="text" placeholder="e.g. Finish COS 106 lab"
+            autocomplete="off"><button class="btn" type="submit">Add task</button></div>
+        <p id="task-error" class="error" role="alert"></p>
+      </form>
+      <p id="task-count" class="note"></p>
+      <ul id="task-list"></ul>
+      <p id="task-empty" class="note">No tasks yet. Add your first one above.</p>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <p>&copy; 2026 Hanson Enobun. Computer Science, MIVA Open University.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
